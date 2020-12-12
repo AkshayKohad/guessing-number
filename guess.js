@@ -1,6 +1,17 @@
 
 
-let RangeNumber=prompt("Enter the maximum range you want")
+//start:
+let RangeNumber=parseInt(prompt("Enter the maximum range you want"))
+// if(!RangeNumber)
+// {
+// 	alert("Not a valid number)
+// 		goto start
+// }
+
+while(!RangeNumber)
+{
+	RangeNumber=parseInt(prompt("Enter the valid number"))
+}
 const DecidedNumber= Math.floor(Math.random()*RangeNumber)+1
 
 var decider=false
